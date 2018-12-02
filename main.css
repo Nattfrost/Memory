@@ -17,3 +17,7 @@ img {
 .matched {
   opacity: 0;
 }
+
+.clicked {
+  background-color: blue;
+}
