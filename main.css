@@ -6,8 +6,11 @@
 
 img {
   height: 50px;
-}
 
+}
+.card {
+    opacity: 0.2;
+}
 .card-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -20,4 +23,5 @@ img {
 
 .clicked {
   background-color: blue;
+  opacity: 1;
 }

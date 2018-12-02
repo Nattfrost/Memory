@@ -24,7 +24,7 @@ const cardsArray = [{
   },
 ];
 
-let idArray = [0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7];
+let idArray = [0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7];
 const cardElts = [...document.querySelectorAll('.card')];
 const imageElts = [...document.querySelectorAll('.cardImg')];
 let current, previous;
@@ -42,16 +42,16 @@ function shuffle(array) {
   return array;
 }
 
+
 shuffle(idArray);
 
 cardElts.forEach((card, i) => {
   let randNum = idArray[i];
   randomImage = cardsArray[randNum].img;
   imageElts[i].setAttribute("src", randomImage);
-  card.dataset.id = randNum+1;
+  card.dataset.id = randNum + 1;
   //handle clicks
-
-  card.addEventListener('click', (event) => {
+  card.addEventListener('click', function handleClick (event) {
     card.classList.add('clicked');
     cardId = card.dataset.id;
     previous = current;
@@ -61,10 +61,12 @@ cardElts.forEach((card, i) => {
       let matches = document.querySelectorAll(`[data-id="${previous}"]`);
       matches.forEach(matched => {
         matched.classList.add('matched');
+        matched.classList.remove('clicked');
+        matched.removeEventListener('click', handleClick);
       })
     } else if (previous !== cardId && current !== previous) {
       let nonMatches = document.querySelectorAll(`[data-id="${previous}"]`);
-      nonMatches.forEach(notMatched => {
+      nonMatches.forEach((notMatched, i) => {
         notMatched.classList.remove('clicked');
       })
     }
