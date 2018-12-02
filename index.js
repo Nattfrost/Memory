@@ -25,18 +25,31 @@ const cardsArray = [{
 ];
 
 const cardElts = [...document.querySelectorAll('.card')];
+const imageTag = [...document.querySelectorAll('.cardImg')];
 
+let current, previous;
 
 cardElts.forEach((card, i) => {
-  const img = cardsArray[i%(cardsArray.length)];
-  const imageTag = [...document.querySelectorAll('.cardImg')];
+  const len = i%(cardsArray.length);
+  const img = cardsArray[len];
   imageTag[i].setAttribute("src", "images/"+img.img);
-  card.dataset.id = i%(cardsArray.length)+1;
-  const cardId = card.dataset.id;
-  console.log(card.dataset.id);
 
+  card.dataset.id = len+1;
+  const cardId = card.dataset.id;
+
+  //handle clicks
   card.addEventListener('click', () => {
     console.log('i was clicked '+cardId);
-
+  //handle matches
+  previous = current;
+  current = cardId;
+  if (previous == cardId) {
+    console.log('match')
+    let matches = document.querySelectorAll(`[data-id="${previous}"]`);
+    matches.forEach(matched => {
+      matched.classList.add('matched');
+    })
+  }
   })
+
 });

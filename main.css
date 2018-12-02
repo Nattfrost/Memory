@@ -1,17 +1,19 @@
-*
-{
+* {
   margin: 0;
   padding: 0;
   transition: 0.4s;
 }
-img
-{
+
+img {
   height: 50px;
 }
 
-.card-container
-{
+.card-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.matched {
+  opacity: 0;
 }
