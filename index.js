@@ -1,11 +1,12 @@
+
 function createCards(array, i) {
   return `
 <div class="card" data-id="">
-<img class="default" src="/images/default.png" />
+<img class="default" src="/images/logo.png" />
 <img class="flipped" src=""/>
 </div>
 <div class="card" data-id="">
-<img class="default" src="/images/default.png" />
+<img class="default" src="/images/logo.png" />
 <img class="flipped" src=""/>
 </div>`
 }
@@ -77,7 +78,4 @@ function startGame(images) {
     card.dataset.id = randNum
     flippedCards[i].setAttribute("src", randomImage)
   })
-}
-function newGame() {
-  
 }
