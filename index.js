@@ -1,12 +1,11 @@
-
 function createCards(array, i) {
   return `
 <div class="card" data-id="">
-<img class="default" src="/images/logo.png" />
+<img class="default" src="/images/logo.jpg" />
 <img class="flipped" src=""/>
 </div>
 <div class="card" data-id="">
-<img class="default" src="/images/logo.png" />
+<img class="default" src="/images/logo.jpg" />
 <img class="flipped" src=""/>
 </div>`
 }
@@ -45,16 +44,16 @@ function startGame(images) {
       return
     }
     current = this
-    previous.dataset.id === current.dataset.id ? killCard() : resetCards()
+    previous.dataset.id === current.dataset.id ? isMatch() : isNotMatch()
   }
 
-  function killCard() {
+  function isMatch() {
     previous.removeEventListener('click', handleClick)
     current.removeEventListener('click', handleClick)
     clear()
   }
 
-  function resetCards() {
+  function isNotMatch() {
     disable = true
     setTimeout(() => {
       previous.classList.remove('flip')
