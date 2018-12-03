@@ -1,7 +1,7 @@
 <img src="https://media.giphy.com/media/3o6gbbuLW76jkt8vIc/giphy.gif" width="480" height="270">
 
 ## Meme-Ory
-An incredibly awful memory game! (first year web-dev @ [Yrgo](https://yrgo.se/utbildningar/media-och-kommunikation/webbutvecklare/))
+An incredibly awful memory game!
 
 ## Tech/framework used
 <b>Built with</b>
@@ -9,16 +9,16 @@ An incredibly awful memory game! (first year web-dev @ [Yrgo](https://yrgo.se/ut
 
 ## Installation
 If you want to use this you might need your own API-key, head over to:
-[Getting started with newsAPI](https://developers.giphy.com/dashboard/?create=true)
-Then update this with your own key.
+[Getting started with newsAPI](https://developers.giphy.com/dashboard/?create=true)<br></b>
+Then update this with your own key: <br></b>
 `var apiKey = "&api_key=9kJfRi6ip66K2xkxwSKa7ZAyK7H5sjpY"`
 
 ## API Reference
-- [API](https://developers.giphy.com/)
+- [API](https://developers.giphy.com/)<br></b>
 	I used the giphy API to get some dank memes.
 
 ## How to use?
-if you'd like to change the "theme" open data.js and update the query variable to change the search criteria:
+if you'd like to change the "theme" open data.js and update the query variable to change the search criteria:<br></b>
 `var query = "&q=random"`
 
 ## How can i contribute?
