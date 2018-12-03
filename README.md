@@ -8,7 +8,7 @@ An incredibly awful memory game!
 - No libraries/frameworks used.
 
 ## API Reference
-- [API](https://developers.giphy.com/)<br></b>
+- [Giphy API](https://developers.giphy.com/)<br></b>
 	I used the giphy API to get some dank memes.
 
 ## Installation
@@ -22,13 +22,15 @@ if you'd like to change the "theme" open data.js and update the query variable t
 `var query = "&q=random"`
 
 ## How can i contribute?
-Have not implemented a search function yet, feel free to add it :)
+Implementing a search function. <br>
+A function to restart the game.
 
 ## Credits
 Thanks to:
 - [Lovisa Hallgren](https://github.com/lovisahallgren)
 - [Izabella Larsson](https://github.com/izabellalarsson)
-- [Charmaine Wang](https://github.com/charmaine-wang)
+- [Charmaine Wang](https://github.com/charmaine-wang) <br>
+for testing.
 
 
 ## License
