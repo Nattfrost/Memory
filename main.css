@@ -16,17 +16,18 @@ body {
 }
 
 .card {
-
   position: relative;
   transform: scale(1);
   transform-style: preserve-3d;
   transition: transform .9s;
 }
+
 .default{
   width: 90%;
   height: 90%;
   overflow: hidden;
 }
+
 .card:active {
   transform: scale(0.97);
   transition: transform .9s;
