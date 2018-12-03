@@ -1,29 +1,11 @@
-const cardsArray = [{
-    img: "images/1.png"
-  },
-  {
-    img: "images/2.png"
-  },
-  {
-    img: "images/3.png"
-  },
-  {
-    img: "images/4.png"
-  },
-  {
-    img: "images/5.png"
-  },
-  {
-    img: "images/6.png"
-  },
-  {
-    img: "images/7.png"
-  },
-  {
-    img: "images/8.png"
-  },
-]
 const idArray = [0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7];
+let previous, current
+let isRevelead, disable = false
+const cards = [...document.querySelectorAll('.card')];
+const defaultCards = [...document.querySelectorAll('.default')];
+const flippedCards = [...document.querySelectorAll('.flipped')];
+
+
 
 function shuffle(array) {
   var currentIndex = array.length,
@@ -37,13 +19,9 @@ function shuffle(array) {
   }
   return array
 }
+
 shuffle(idArray)
 
-let previous, current
-let isRevelead, disable = false
-const cards = [...document.querySelectorAll('.card')];
-const defaultCards = [...document.querySelectorAll('.default')];
-const flippedCards = [...document.querySelectorAll('.flipped')];
 
 cards.forEach((card, i) => {
   card.addEventListener('click', handleClick)
