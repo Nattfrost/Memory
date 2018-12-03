@@ -7,15 +7,15 @@ An incredibly awful memory game!
 <b>Built with</b>
 - No libraries/frameworks used.
 
-## Installation
-If you want to use this you might need your own API-key, head over to:
-[Getting started with newsAPI](https://developers.giphy.com/dashboard/?create=true)<br></b>
-Then update this with your own key: <br></b>
-`var apiKey = "&api_key=9kJfRi6ip66K2xkxwSKa7ZAyK7H5sjpY"`
-
 ## API Reference
 - [API](https://developers.giphy.com/)<br></b>
 	I used the giphy API to get some dank memes.
+
+## Installation
+If you want to use this you might need your own API-key, head over to:
+[developers/giphy](https://developers.giphy.com/dashboard/?create=true)<br></b>
+Then update this with your own key: <br></b>
+`var apiKey = "&api_key=9kJfRi6ip66K2xkxwSKa7ZAyK7H5sjpY"`
 
 ## How to use?
 if you'd like to change the "theme" open data.js and update the query variable to change the search criteria:<br></b>
