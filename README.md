@@ -1,4 +1,4 @@
-<img src="https://giphy.com/embed/3o6gbbuLW76jkt8vIc" width="480" height="270">
+<img src="https://media.giphy.com/media/3o6gbbuLW76jkt8vIc/giphy.gif" width="480" height="270">
 
 ## Meme-Ory
 An incredibly awful memory game! (first year web-dev @ [Yrgo](https://yrgo.se/utbildningar/media-och-kommunikation/webbutvecklare/))
