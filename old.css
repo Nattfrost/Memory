@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  transition: 0.4s;
+  box-sizing: border-box;
+}
+
+img {
+  height: 50px;
+
+}
+.card {
+    opacity: 0.2;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.matched {
+  opacity: 0;
+}
+
+.clicked {
+  background-color: blue;
+  opacity: 1;
+}
